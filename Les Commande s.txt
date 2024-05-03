@@ -1,0 +1,50 @@
+
+************ commande INSERT *****************
+
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+
+Exemple -------
+
+INSERT INTO Utilisateur (nom, email, mot_de_passe, id_role)
+VALUES ('Hanane', 'hanane@example.com', 'password789', 2);
+
+
+
+************ commande UPDATE *****************
+
+
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+Exemple -------
+
+UPDATE Utilisateur
+SET mot_de_passe = '123456'
+WHERE email = 'hanane@example.com'; 
+
+
+
+************ commande DELETE *****************
+
+
+DELETE FROM table_name
+WHERE condition;
+
+Exemple -------
+
+DELETE FROM Utilisateur
+WHERE email = 'hanane@example.com';
+
+
+
+************ commande DROP *****************
+
+
+DROP DATABASE my_database;
+
+Exemple ------
+
+DROP TABLE Role;
